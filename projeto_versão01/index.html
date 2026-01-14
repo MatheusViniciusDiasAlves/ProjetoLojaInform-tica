@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Página Inicial</title>
 </head>
 
 <body>
+
     <!-- Criando o Cabeçalho -->
     <header>
         <!-- Criando a navegação do Site -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <button class="btn btn-secondary position-absolute top-5 end-0 m-3" id="alterarTema"
+                onclick="alterarTemaSite()">
+                <i class="bi bi-brightness-high-fill"></i>
+            </button>
             <div class="container">
                 <a class="navbar-brand" href="index.html">MD FORMMATING</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
@@ -65,98 +71,106 @@
         <div class="card" style="width: 18rem;">
             <img src="Img/placa de vídeo.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Placa de vídeo de alto desempenho para games, edição de vídeo e aplicações gráficas.</p>
+                <p class="card-text">Placa de vídeo de alto desempenho para games, edição de vídeo e aplicações
+                    gráficas.</p>
             </div>
         </div>
-          <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img src="Img/kit ferramenta.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Kit de ferramentas completo, prático e resistente para reparos e manutenções em geral.</p>
+                <p class="card-text">Kit de ferramentas completo, prático e resistente para reparos e manutenções em
+                    geral.</p>
             </div>
         </div>
-          <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img src="Img/tv.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">TV com excelente qualidade de imagem e som, ideal para transformar sua experiência de entretenimento.</p>
+                <p class="card-text">TV com excelente qualidade de imagem e som, ideal para transformar sua experiência
+                    de entretenimento.</p>
             </div>
         </div>
-          <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img src="Img/tablet.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Tablet versátil com ótima tela, perfeito para estudar, trabalhar ou se divertir.</p>
+                <p class="card-text">Tablet versátil com ótima tela, perfeito para estudar, trabalhar ou se divertir.
+                </p>
             </div>
         </div>
-          <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img src="Img/notebook.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Notebook leve e potente, ideal para produtividade, estudos e mobilidade.</p>
             </div>
         </div>
-           <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img src="Img/celular.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Smartphone moderno com ótimo desempenho, câmera de alta qualidade e bateria duradoura para o seu dia a dia.</p>
+                <p class="card-text">Smartphone moderno com ótimo desempenho, câmera de alta qualidade e bateria
+                    duradoura para o seu dia a dia.</p>
             </div>
         </div>
-           <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img src="Img/computador.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Computador rápido e eficiente, ideal para trabalho, estudos e entretenimento.</p>
             </div>
         </div>
-           <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img src="Img/microfone.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Microfone de alta qualidade, perfeito para gravações, chamadas, lives e podcasts.</p>
+                <p class="card-text">Microfone de alta qualidade, perfeito para gravações, chamadas, lives e podcasts.
+                </p>
             </div>
         </div>
     </section>
     <footer class="bg-primary text-white mt-5">
         <div class="container py-4">
-        <div class="row">
+            <div class="row">
 
-            <!-- Coluna 1 -->
-            <div class="col-md-4 mb-3">
-                <h5>MD FORMATTING</h5>
-                <p>
-                    Soluções em informática, tecnologia e suporte.
-                    Qualidade, confiança e inovação.
-                </p>
+                <!-- Coluna 1 -->
+                <div class="col-md-4 mb-3">
+                    <h5>MD FORMATTING</h5>
+                    <p>
+                        Soluções em informática, tecnologia e suporte.
+                        Qualidade, confiança e inovação.
+                    </p>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-md-4 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="sobre.html" class="text-white text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contato</h5>
+                    <p>
+                        📍 Rolândia - PR<br>
+                        📞 (43) 98850-2932<br>
+                        ✉️ matheusviniciusdiasalves@gmail.com
+                    </p>
+                </div>
+
             </div>
-
-            <!-- Coluna 2 -->
-            <div class="col-md-4 mb-3">
-                <h5>Links Rápidos</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="sobre.html" class="text-white text-decoration-none">Sobre Nós</a></li>
-                    <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
-                </ul>
-            </div>
-
-            <!-- Coluna 3 -->
-            <div class="col-md-4 mb-3">
-                <h5>Contato</h5>
-                <p>
-                    📍 Rolândia - PR<br>
-                    📞 (43) 98850-2932<br>
-                    ✉️ matheusviniciusdiasalves@gmail.com
-                </p>
-            </div>
-
         </div>
-    </div>
 
-    <!-- Barra inferior -->
-    <div class="bg-dark text-center py-2">
-        <small>
-            © 2026 MD FORMATTING - Todos os direitos reservados
-        </small>
-    </div>
+        <!-- Barra inferior -->
+        <div class="bg-dark text-center py-2">
+            <small>
+                © 2026 MD FORMATTING - Todos os direitos reservados
+            </small>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+
 </body>
 
 </html>
