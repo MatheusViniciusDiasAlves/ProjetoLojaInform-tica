@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Página Inicial</title>
@@ -12,7 +13,97 @@
 <body>
     <!-- Criando o Cabeçalho -->
     <header>
-        
+        <header>
+        <!-- Criando a navegação do Site -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <button class="btn btn-secondary position-absolute top-5 end-0 m-3" id="alterarTema"
+                onclick="alterarTemaSite()">
+                <i class="bi bi-brightness-high-fill"></i>
+            </button>
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MD FORMMATING</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Criando lista para navegação entre as páginas -->
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Criando nossa seção com conteúdo -->
+    <section>
+        <h1 class="text-center">SOBRE NÓS</h1>
+        <div class="container">
+            <p>A MD Formmating, de Matheus Vinícius Dias Alves, é uma loja especializada em formatação e manutenção de computadores, criada para oferecer soluções rápidas, seguras e eficientes para quem precisa de um desempenho melhor em seus equipamentos.</p>
+
+            <p>Com foco na qualidade do serviço e na satisfação do cliente, a MD Formmating trabalha com formatação completa de computadores, instalação de sistemas operacionais, drivers e programas essenciais, além da remoção de vírus e otimização do sistema. Cada atendimento é realizado com atenção aos detalhes, garantindo que o computador volte a funcionar de forma estável, rápida e segura.</p>
+
+            <p>A loja se destaca pela transparência, confiança e profissionalismo, sempre explicando ao cliente o que será feito no equipamento e oferecendo as melhores opções de acordo com cada necessidade. Seja para uso pessoal, escolar ou profissional, a MD Formmating está preparada para cuidar do seu computador com responsabilidade e eficiência.</p>
+
+            <p>Escolher a MD Formmating é optar por um serviço confiável, feito por quem entende de tecnologia e se dedica a entregar os melhores resultados.</p>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+
+                <!-- Coluna 1 -->
+                <div class="col-md-4 mb-3">
+                    <h5>MD FORMATTING</h5>
+                    <p>
+                        Soluções em informática, tecnologia e suporte.
+                        Qualidade, confiança e inovação.
+                    </p>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-md-4 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="sobre.html" class="text-white text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contato</h5>
+                    <p>
+                        📍 Rolândia - PR<br>
+                        📞 (43) 98850-2932<br>
+                        ✉️ matheusviniciusdiasalves@gmail.com
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Barra inferior -->
+        <div class="bg-dark text-center py-2">
+            <small>
+                © 2026 MD FORMATTING - Todos os direitos reservados
+            </small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+
         
     </header>
 
